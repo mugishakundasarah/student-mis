@@ -73,8 +73,8 @@ public class StudentDao {
             String firstName = resultSet.getString("first_name");
             String lastName = resultSet.getString("last_name");
             String gender = resultSet.getString("gender");
-            Student Student = new Student(id, firstName, lastName, gender);
-            listStudent.add(Student);
+//            Student Student = new Student(id, firstName, lastName, gender);
+//            listStudent.add(Student);
         }
         resultSet.close();
         statement.close();
@@ -85,7 +85,7 @@ public class StudentDao {
         String sql = "DELETE FROM student where id = ?";
         connect();
         PreparedStatement statement = jdbcConnection.prepareStatement(sql);
-        statement.setInt(1, student.getId().intValue());
+//        statement.setInt(1, student.getId().intValue());
         boolean rowDeleted = statement.executeUpdate() > 0;
         statement.close();
         disconnect();
@@ -99,7 +99,7 @@ public class StudentDao {
         statement.setString(1, Student.getFirstName());
         statement.setString(2, Student.getLastName());
         statement.setString(3, Student.getGender());
-        statement.setLong(4, Student.getId());
+//        statement.setLong(4, Student.getId());
         boolean rowUpdated = statement.executeUpdate() > 0;
         statement.close();
         disconnect();
@@ -109,16 +109,16 @@ public class StudentDao {
         Student student = null;
         String sql = "SELECT * FROM student WHERE id = ?";
         connect();
-        int stdId = sst.getId().intValue();
+//        int stdId = sst.getId().intValue();
         PreparedStatement statement = jdbcConnection.prepareStatement(sql);
-        statement.setInt(1, stdId);
+//        statement.setInt(1, stdId);
         ResultSet resultSet = statement.executeQuery();
         if (resultSet.next()) {
 
             String firstName = resultSet.getString("first_name");
             String lastName = resultSet.getString("last_name");
             String gender = resultSet.getString("gender");
-            student = new Student(new Long(stdId), firstName, lastName, gender);
+//            student = new Student(new Long(stdId), firstName, lastName, gender);
         }
         resultSet.close();
         statement.close();

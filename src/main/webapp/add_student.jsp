@@ -11,6 +11,7 @@
 <html>
 <head>
     <title>Students Managment</title>
+<%--    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/styles.css" />--%>
 <%--    <link href="${pageContext.request.contextPath}/css/styles.css" rel="stylesheet" type="text/css"> </link>--%>
 <%--    <script language="JavaScript" type="text/JavaScript"--%>
 <%--            src="../js/hello.js"></script>--%>
