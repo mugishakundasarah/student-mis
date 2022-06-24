@@ -10,23 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40c14aef-5d16-48d4-9dc6-ecbfdc08811e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/dao/StudentDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/utils/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/studentmis_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/studentmis_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7f3f737-8900-4a33-944f-6d582aabbf93.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7f3f737-8900-4a33-944f-6d582aabbf93/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7f3f737-8900-4a33-944f-6d582aabbf93/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7f3f737-8900-4a33-944f-6d582aabbf93/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7f3f737-8900-4a33-944f-6d582aabbf93/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dda22e77-867f-4038-a333-1d8d1039adc0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dda22e77-867f-4038-a333-1d8d1039adc0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/models/AssignementStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/models/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/models/CourseAssignment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/school/studentmis/controllers/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/controllers/Students.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/school/studentmis/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/school/studentmis/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/models/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add_student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add_student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/school/studentmis/utils/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/school/studentmis/utils/HibernateUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +26,7 @@
       <list>
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -81,29 +70,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/sarah/Downloads/postgresql-42.4.0.jar",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.16144814",
-    "project.structure.side.proportion": "0.1150748"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sarah/Downloads/postgresql-42.4.0.jar&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16144814&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.1150748&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -203,7 +192,8 @@
       <updated>1655436661940</updated>
       <workItem from="1655436663165" duration="10616000" />
       <workItem from="1655715339307" duration="2251000" />
-      <workItem from="1655876269623" duration="6479000" />
+      <workItem from="1655876269623" duration="7376000" />
+      <workItem from="1656056037356" duration="2042000" />
     </task>
     <servers />
   </component>

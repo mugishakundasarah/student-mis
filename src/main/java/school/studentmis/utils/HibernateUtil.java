@@ -6,6 +6,9 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
+import school.studentmis.models.AssignementStatus;
+import school.studentmis.models.Course;
+import school.studentmis.models.CourseAssignment;
 import school.studentmis.models.Student;
 /**
  * Java based configuration
@@ -36,6 +39,8 @@ public class HibernateUtil {
 
                 configuration.setProperties(settings);
                 configuration.addAnnotatedClass(Student.class);
+                configuration.addAnnotatedClass(Course.class);
+                configuration.addAnnotatedClass(CourseAssignment.class);
 
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();
